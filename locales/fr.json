@@ -1,0 +1,6 @@
+{
+    "success_notify_title": "Report envoyé !",
+    "success_notify_desc": "Le staff s'occupera de ton report le plus rapidement possible",
+    "error_notify_title": "Report non envoyé !",
+    "DiscordLog": "\n **Joueur: ** `%s` \n **ID: ** `%s` \n ```%s```"
+}

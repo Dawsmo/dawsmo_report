@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <title>REPORT</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="report-form">
+                <div class="logo-container">
+                    <img src="img/report.png" alt="created by Anggara" class="logo">
+                </div>
+                <h2>Formulaire de Report</h2>
+                <div class="warning-message">
+                    <div class="warning-icon-container">
+                        <img src="img/warning.png" alt="created by Freepik" class="warning-icon">
+                    </div>
+                    <div class="warning-text-container">
+                        <p class="warning-text">
+                            Merci d'utiliser /report uniquement pour des problèmes sérieux nécessitant l'intervention du staff.
+                            Les signalements abusifs seront sévèrement sanctionnés.
+                            <span class="highlight-text">Veillez à décrire votre demande de la manière la plus précise possible!</span>
+                        </p>
+                    </div>
+                </div>
+                <form action="#" method="post" id="reportForm">
+                    <label for="reason">Raison du Report:</label>
+                    <select name="reason" id="reason" required>
+                        <option value="Bug">Bug</option>
+                        <option value="Problème In-Game">Problème In-Game</option>
+                        <option value="Demande de spec">Demande de spec</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required maxlength="200"></textarea>
+                
+                    <div class="acknowledge-wrapper">
+                        <input type="checkbox" id="acknowledge" required>
+                        <label for="acknowledge" class="acknowledge-label">J'ai bien pris connaissance des conditions pour envoyer un report.</label>
+                    </div>
+                    
+                    
+                
+                    <button type="button" class="close-btn" onclick="closeForm()">Fermer</button>
+                    <button type="button" onclick="sendForm()">Envoyer</button>
+                </form>
+                
+            </div>
+            <div class="forbidden-causes">
+                <h3>Causes non autorisées</h3>
+                <ul>
+                    <li>Toute demande incomplète de type "un bug" - "à l'aide" - "besoin d'un admin"</li>
+                    <li>Toute demande de revive après une mort de faim/soif</li>
+                    <li>Toute demande de revive/heal car pas d'EMS</li>
+                    <!-- Ajoutez d'autres causes non autorisées -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
